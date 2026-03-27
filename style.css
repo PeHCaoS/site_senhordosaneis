@@ -6,3 +6,9 @@
              background-color: #1a7e2b;
              color: white;
 }
+#layout{
+        display: flex;
+}
+.rodape{
+    text-align: center;
+}
