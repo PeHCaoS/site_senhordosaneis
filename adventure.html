@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contato com a Terra Média</title>
+</head>
+<body>
+    <div id="titulo_principal">
+            <h1> O senhor dos Anéis</h1>
+            <h2 class="titulo_secundario">Uma das triologias mais famosas do cinema</h2>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="sinopse.html">Sinopse</a>
+                    <a href="imagemfilme.html">Imagem do Filme</a>
+                    <a href="personagens.html">Personagens Principais</a>
+                    <a href="informações.html">Informações</a>
+                    <a href="ordemDosFilmes.html">Ordem dos Filmes</a>
+                    <a href="curiosidades.html">Curiosidades</a>
+                    <a href="impacto.html">Impacto Cultural</a>
+                    <a href="contato.html">Contato</a>
+                    <a href="#conclusao">Conclusão</a>
+                    <a href="adventure.html">Terra Média</a>
+                </nav>
+    </div>
+
+    <h2 class="titulo_secundario">Contato com a Terra Média:</h2>
+        Envie sua mensagem diretamente ao conselho de Elrond<br><br>
+
+    <form action="processa.php" method="get" autocomplete="off">
+        <label for="nomepessoa">Nome na Terra Média:</label>
+            <input type="text" name="nomepessoa" 
+            id="nomepessoa" minlength="3" maxlength="15"
+             required placeholder="Ex: Aragorn"><br><br>
+        <label for="email">Corvo Eletrônico (Email):</label>
+                <input type="email" name="email" id="email" required placeholder=""><br><br>
+        <label for="email">Ano de Nascimento:</label>
+                <input type="number" name="ano" max="2026" min="1900" required placeholder="">
+    <fieldset>
+        <legend>Qual é a sua raça?</legend>
+                
+                <input type="radio" name="filme" value="Humano" checked type="Humano" id="Humano" for="Humano">
+                <label for="id">Humano</label>
+
+                <input type="radio" name="filme" value="Elfo" checked type="Elfo" id="Elfo" for="Elfo">
+                <label for="id">Elfo</label>
+
+                <input type="radio" name="filme" value="Anão" checked type="Anão" id="Anão" for="Anão">
+                <label for="id">Anão</label>
+
+                <input type="radio" name="filme" value="Hobbit" checked type="Hobbit" id="Hobbit" for="Hobbit">
+                <label for="id">Hobbit</label>
+    </fieldset><br>
+
+    Escolha seu filme favorito 
+            <select>
+                <option value="filme 1">A Sociedade do Anel</option>
+                <option value="filme 2">As Duas Torres</option>
+                <option selected value="filme 3">O Retorno do Rei</option>
+            </select><br><br>
+    Escolha um local da Terra Média:
+    <select id="lista_suspensa" name="lista">
+            <optgroup label="Reino dos Homens">
+                <option value="Gondor">Gondor</option>
+                <option value="Rohan">Rohan</option>
+            </optgroup>
+            <optgroup label="Terras Elficas">
+                <option value="Valfenda">Valfenda</option>
+                <option value="Lothlórien">Lothlórien</option>
+            </optgroup>
+            <optgroup label="Outros">
+                <option value="Mordor">Mordor</option>
+                <option value="Condado">Condado</option>
+            </optgroup>
+    </select><br><br>
+    <fieldset> 
+            <legend>Suas Habilidades</legend>
+            <label><input type="checkbox" name="Espada" value="Espada">Espada</label>
+            <label><input type="checkbox" name="Arco e Flecha" value="Arco e Flecha">Arco e Flecha</label>
+            <label><input type="checkbox" name="Magia" value="Magia">Magia</label>
+            <label><input type="checkbox" name="Furtividade Hobbit" value="Furtividade Hobbit">Furtividade Hobbit</label>
+    </fieldset><br>
+    Nivel de Coragem (1 a 10)
+    <input type="range" max="10" min="1" id="nivel" name="nivel"><br><br>
+    <label for="Seu Reino de Origem">Seu Reino de Origem</label>
+    <!-- Datalist Paises da Terra Média-->
+            <input type="text" id="busca_datalist" list="países">
+            <datalist id="países">
+                <option>Gondor</option>
+                <option>Rohan</option>
+                <option>Mordor</option>
+                <option>Condado</option>
+            </datalist><br><br>
+    <label for="cor">Cor do seu manto:</label>
+    <input type="color" id="cor" name="cor"><br><br>
+    <label for="data">Data da sua jornada:</label>
+    <input type="date" name="data" id="data"><br><br>
+    <label for="arquivo">Anexe uma relíquia:</label>
+    <input type="file" id="arquivo" name="arquivo"><br><br>
+    Mensagem ao Conselho:<br>
+    <textarea cols="30" rows="5" name="descrição" id="descrição" required placeholder="Escreva sua Nissão..."></textarea><br><br>
+    <button type="reset">Apagar Pergaminho</button>
+    <button type="submit">Enviar para Valfenda</button><br><br>
+</body>
+</html>
