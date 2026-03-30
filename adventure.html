@@ -25,7 +25,7 @@
                 </nav>
     </div>
 
-    <h2 class="titulo_secundario">Contato com a Terra Média:</h2>
+    <h1 class="titulo_secundario">Contato com a Terra Média:</h1>
         Envie sua mensagem diretamente ao conselho de Elrond<br><br>
 
     <form action="processa.php" method="get" autocomplete="off">
@@ -34,9 +34,9 @@
             id="nomepessoa" minlength="3" maxlength="15"
              required placeholder="Ex: Aragorn"><br><br>
         <label for="email">Corvo Eletrônico (Email):</label>
-                <input type="email" name="email" id="email" required placeholder=""><br><br>
+                <input type="email" name="email" id="email" required placeholder="Insira seu email"><br><br>
         <label for="ano">Ano de Nascimento:</label>
-                <input type="number" name="ano" max="2026" min="1900" required placeholder="">
+                <input type="number" name="ano" max="2026" min="1900" required placeholder="Ano"><br><br>
     <fieldset>
         <legend>Qual é a sua raça?</legend>
                 
@@ -82,9 +82,8 @@
             <label><input type="checkbox" name="Furtividade Hobbit" value="Furtividade Hobbit">Furtividade Hobbit</label>
     </fieldset><br>
     Nivel de Coragem (1 a 10)
-    <input type="range" max="10" min="1" id="nivel" name="nivel"><br><br>
+    <input type="range" max="10" min="1" id="nivel" ><br><br>
     <label for="Seu Reino de Origem">Seu Reino de Origem</label>
-    <!-- Datalist Paises da Terra Média-->
             <input type="text" id="busca_datalist" list="países">
             <datalist id="países">
                 <option>Gondor</option>
