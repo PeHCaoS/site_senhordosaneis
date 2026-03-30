@@ -26,7 +26,7 @@
     </div>
 
     <h1 class="titulo_secundario">Contato com a Terra Média:</h1>
-        Envie sua mensagem diretamente ao conselho de Elrond<br><br>
+    <label for="mensagem">Envie sua mensagem diretamente ao conselho de Elrond</label><br><br>
 
     <form action="processa.php" method="get" autocomplete="off">
         <label for="nomepessoa">Nome na Terra Média:</label>
@@ -53,13 +53,13 @@
                 <label for="id">Hobbit</label>
     </fieldset><br>
 
-    Escolha seu filme favorito 
+    <label for="filme">Escolha seu filme favorito</label>  
             <select>
                 <option value="filme 1">A Sociedade do Anel</option>
                 <option value="filme 2">As Duas Torres</option>
                 <option selected value="filme 3">O Retorno do Rei</option>
             </select><br><br>
-    Escolha um local da Terra Média:
+    <label for="local">Escolha um local da Terra Média:</label>                              
     <select id="lista_suspensa" name="lista">
             <optgroup label="Reino dos Homens">
                 <option value="Gondor">Gondor</option>
@@ -81,8 +81,9 @@
             <label><input type="checkbox" name="Magia" value="Magia">Magia</label>
             <label><input type="checkbox" name="Furtividade Hobbit" value="Furtividade Hobbit">Furtividade Hobbit</label>
     </fieldset><br>
-    Nivel de Coragem (1 a 10)
+    <label for="nivel">Nivel de Coragem (1 a 10)</label>                            
     <input type="range" max="10" min="1" id="nivel" ><br><br>
+
     <label for="Seu Reino de Origem">Seu Reino de Origem</label>
             <input type="text" id="busca_datalist" list="países">
             <datalist id="países">
@@ -91,14 +92,19 @@
                 <option>Mordor</option>
                 <option>Condado</option>
             </datalist><br><br>
+
     <label for="cor">Cor do seu manto:</label>
     <input type="color" id="cor" name="cor"><br><br>
+
     <label for="data">Data da sua jornada:</label>
     <input type="date" name="data" id="data"><br><br>
+
     <label for="arquivo">Anexe uma relíquia:</label>
     <input type="file" id="arquivo" name="arquivo"><br><br>
-    Mensagem ao Conselho:<br>
+
+    <label for="mensagem">Mensagem ao Conselho:</label><br>
     <textarea cols="30" rows="5" name="descrição" id="descrição" required placeholder="Escreva sua Missão..."></textarea><br><br>
+
     <button type="reset">Apagar Pergaminho</button>
     <button type="submit">Enviar para Valfenda</button><br><br>
 </body>
