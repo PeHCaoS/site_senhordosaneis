@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 #titulo_principal{
             background-color: #32da1c;
             color:white;
@@ -5,10 +6,31 @@
 .titulo_secundario{
              background-color: #1a7e2b;
              color: white;
-}
-#layout{
-        display: flex;
-}
+}             
 .rodape{
     text-align: center;
+}
+body{
+    /*Topografia CSS*/
+    background-color: rgb(0,0,0); /*Cor de fundo*/
+    color: rgb(255, 238, 0); /*Cor da fonte*/
+    font-family: "Roboto", sans-serif; /*Fonte do texto*/
+    font-size: 16px ; /*Tamanho da fonte - px/em/rem*/
+}
+#layout{
+    font-size: 1em; /*Herda o tamanho do pai dele com um multiplicador*/
+    display: flex;
+    font-style: normal; /*Estilo da fonte: italic - normal - oblique*/
+    line-height: 25px; /*Espaçamento de linhas*/
+    font-weight: 400; /*Negrito em CSS 100 a 900 - bold e bolder*/
+    text-transform: none; /*Capitalização do texto upercase, lowecase e captalize*/
+    text-decoration: none; /*Sublinhado de texto: under e overline-double-dashed-dotted-wavy-none*/
+    word-spacing: 5px; /*Espacamento entre palavras*/
+    letter-spacing: none; /*Espacmento entre letras*/
+    text-indent: 20px; /*Espacamento de paragrafo primeira linha*/
+    text-align: justify; /*Alinhamento do texto: left-right-center-justify*/
+}
+
+nav a{
+    text-decoration: none;
 }
